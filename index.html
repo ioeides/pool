@@ -1,0 +1,43 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>poolrechner</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script> 
+  </head>
+  <body>
+    <h1>Poolrechner</h1>
+    <h2>by val</h2>
+    <br>
+    <div>
+      <h2>Fläche berechnen<h2>
+
+      <form id="geometrie">
+        Anzahl Paletten [#]: <input type="text" id="n" value="10">
+        <br>
+        Seitenlänge einer Palette [m]: <input type="text" id="a" value="1.2">
+        <br>
+        Füllhöhe des Pools [m]: <input type="text" id="h" value="0.7">
+        <br>
+        Dichte des Mediums [kg/m³]: <input type="text" id="d" value="998">
+        <br>
+        Starttemperatur [°C]: <input type="text" id="ts" value="18">
+        <br>
+        Zieltemperatur [°C]: <input type="text" id="tz" value="37">
+        <br>
+        spezifische Wärmekapazität [kJ/(kg*K)]: <input type="text" id="c" value="4.2">
+        <br>
+        <input type="button" onclick="calc()" value="Berechnen">
+      </form>
+      <p id=Ergebnis_Fläche></p>
+      <p id=Ergebnis_Volumen></p>
+      <p id=Ergebnis_Masse></p>
+      <p id=Ergebnis_Energie></p>
+    </div>
+    <div class="footer">
+      <p>Impressum? Datenschutz? <br> Hier entlang: <a href="https://vschlegel.de/about.html">vschlegel.de/about.html</a></p>
+    <div>
+  </body>
+</html>
